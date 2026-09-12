@@ -148,7 +148,7 @@ function AppTitlebar({ fileName }: { fileName: string }) {
     <header className="titlebar">
       <div className="titlebar-brand" data-tauri-drag-region>
         <span className="brand-mark" data-tauri-drag-region>m</span>
-        <span data-tauri-drag-region>Mark</span>
+        <span data-tauri-drag-region>Moneyshot</span>
       </div>
       <div className="titlebar-file" data-tauri-drag-region>{fileName}</div>
       <div className="window-controls">

@@ -1,12 +1,12 @@
 [package]
-name = "mark-screenshot-editor"
+name = "moneyshot"
 version = "0.1.0"
 description = "A small, focused screenshot annotation app"
 authors = ["testy.cool"]
 edition = "2021"
 
 [lib]
-name = "mark_screenshot_editor_lib"
+name = "moneyshot_lib"
 crate-type = ["staticlib", "cdylib", "rlib"]
 
 [build-dependencies]

@@ -208,7 +208,7 @@ pub fn run() {
     tauri::Builder::default()
         .invoke_handler(tauri::generate_handler![open_image, save_image, ask_gemini])
         .run(tauri::generate_context!())
-        .expect("error while running Mark");
+        .expect("error while running Moneyshot");
 }
 
 #[cfg(test)]
