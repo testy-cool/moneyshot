@@ -5,6 +5,10 @@
 
 Crop a screenshot, point out what matters, and blur what you don't want to share. Moneyshot is a small desktop editor with handwritten arrows, movable annotations, and optional AI region detection.
 
+![Moneyshot editing a fictional deployment screenshot with a handwritten arrow and a blurred email address](assets/editor.png)
+
+*Actual editor UI, captured in the browser preview with fictional sample content.*
+
 **Early development.** Manual editing is the starting point. Desktop AI dispatch and clipboard paste have reported bugs; use **Open** to load an image. Prebuilt downloads are not available yet.
 
 ## What you can do
@@ -28,6 +32,10 @@ npm run dev
 ```
 
 Click **Open**, choose a PNG, JPEG or WebP, add an arrow or box, then **Export PNG**. To crop, drag a region with the Crop tool and click **Apply crop**.
+
+![Moneyshot showing a crop preview before applying it](assets/crop-preview.png)
+
+*Review the framing before changing the image.*
 
 For a browser preview of manual editing, run `npm run web:dev` and open the printed local URL. Native dialogs and AI requests require the desktop app.
 
