@@ -1,0 +1,21 @@
+[package]
+name = "mark-screenshot-editor"
+version = "0.1.0"
+description = "A small, focused screenshot annotation app"
+authors = ["testy.cool"]
+edition = "2021"
+
+[lib]
+name = "mark_screenshot_editor_lib"
+crate-type = ["staticlib", "cdylib", "rlib"]
+
+[build-dependencies]
+tauri-build = { version = "2", features = [] }
+
+[dependencies]
+base64 = "0.22"
+reqwest = { version = "0.12", default-features = false, features = ["json", "rustls-tls"] }
+rfd = "0.17"
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+tauri = { version = "2.11.5", features = [] }

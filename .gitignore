@@ -1,0 +1,52 @@
+# Dependency directories
+node_modules/
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+credentials.json
+secrets.json
+.sharp-stage/
+
+# Build and package outputs
+app-bundle/
+release/
+dist/
+coverage/
+.nyc_output/
+src-tauri/target/
+src-tauri/gen/schemas/
+
+# Log files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# System files
+.DS_Store
+Thumbs.db
+
+# IDE / Editor configuration
+.idea/
+.vscode/
+*.suo
+*.ntvsca
+*.ntvs_analysis_state
+*.njsproj
+*.sln
+*.sw?
+*.txt
+!docs/llms.txt
+!docs/llms-full.txt
+!docs/robots.txt
+
+*.md
+!README.md
+!PRIVACY.md
+.aider*
+.qwen/settings.json
+.qwen/settings.json.orig
+.commandcode/**/taste.md
