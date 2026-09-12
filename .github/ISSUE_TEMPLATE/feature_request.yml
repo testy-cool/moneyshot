@@ -1,0 +1,18 @@
+name: Feature request
+description: Suggest a simpler way to complete an editing task.
+labels: [enhancement]
+body:
+  - type: textarea
+    id: task
+    attributes:
+      label: What are you trying to do?
+      description: Describe the editing task and what gets in your way.
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: What would help?
+      description: A concrete example is useful. Redact private content from screenshots.
+    validations:
+      required: true
