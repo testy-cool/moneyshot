@@ -1,0 +1,40 @@
+User-agent: *
+Allow: /
+
+# Primary crawl targets
+# https://achu.app/
+# https://achu.app/#compare
+# https://achu.app/#faq
+
+# LLM / AI context files (llms.txt standard)
+# https://achu.app/llms.txt
+# https://achu.app/llms-full.txt
+
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: Bytespider
+Allow: /
+
+Sitemap: https://achu.app/sitemap.xml

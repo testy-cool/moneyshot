@@ -1,0 +1,15 @@
+#!/usr/bin/env sh
+set -eu
+
+capture_path="$(mktemp --suffix=.png "${TMPDIR:-/tmp}/moneyshot-flameshot.XXXXXX")"
+cleanup() {
+  rm -f "$capture_path"
+}
+trap cleanup EXIT HUP INT TERM
+
+flameshot_bin="$(command -v flameshot)"
+moneyshot_bin="$(command -v moneyshot)"
+
+if "$flameshot_bin" gui --raw --clipboard --accept-on-select >"$capture_path" && [ -s "$capture_path" ]; then
+  "$moneyshot_bin" "$capture_path"
+fi

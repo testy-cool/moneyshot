@@ -203,6 +203,7 @@ export default function App() {
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const fileInputRef = useRef<HTMLInputElement>(null);
   const gestureRef = useRef<Gesture | null>(null);
+  const startupImageLoadedRef = useRef(false);
   const [image, setImage] = useState<EditorImage | null>(null);
   const [annotations, setAnnotations] = useState<Annotation[]>([]);
   const [selectedId, setSelectedId] = useState<string | null>(null);
@@ -344,6 +345,16 @@ export default function App() {
       setStatus(error instanceof Error ? error.message : String(error));
     }
   }, []);
+
+  useEffect(() => {
+    if (!isTauri() || startupImageLoadedRef.current) return;
+    startupImageLoadedRef.current = true;
+    void invoke<OpenedImagePayload | null>("open_startup_image")
+      .then((opened) => {
+        if (opened) return loadDataUrl(opened.dataUrl, opened.fileName);
+      })
+      .catch((error) => setStatus(String(error)));
+  }, [loadDataUrl]);
 
   useEffect(() => {
     const handlePaste = (event: ClipboardEvent) => {

@@ -1,0 +1,795 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-5L0L1Z37ZQ"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-5L0L1Z37ZQ');
+  </script>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Primary SEO Metadata -->
+  <title>achu - Free Open-Source Screenshot Beautifier for Windows, macOS &amp; Linux</title>
+  <meta name="description"
+    content="Free MIT open-source screenshot beautifier for Windows, macOS, and Linux. Local gallery, privacy redaction, Code Studio, AI GitHub issues, and platform burst packs. Compare vs CleanShot, Shottr, and Xnapper.">
+  <meta name="keywords"
+    content="screenshot beautifier, free screenshot tool, CleanShot alternative, Shottr alternative, Xnapper alternative, open source screenshot, local screenshot gallery, privacy redaction, OCR, AI bug report, Code Studio, burst pack, Windows macOS Linux, achu">
+  <meta name="author" content="NaveenKumar Namachivayam">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+  <meta name="googlebot" content="index, follow, max-image-preview:large">
+  <meta name="application-name" content="achu">
+  <meta name="apple-mobile-web-app-title" content="achu">
+  <link rel="canonical" href="https://achu.app/">
+  <link rel="alternate" type="text/plain" href="https://achu.app/llms.txt" title="LLM-readable site summary">
+  <link rel="alternate" type="text/plain" href="https://achu.app/llms-full.txt" title="Extended LLM-readable site summary">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="achu">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:url" content="https://achu.app/">
+  <meta property="og:title" content="achu - Free Open-Source Screenshot Beautifier for Windows, macOS &amp; Linux">
+  <meta property="og:description"
+    content="Beautify screenshots free on every desktop OS. Local gallery, privacy redact, Code Studio, AI GitHub issues, burst packs. Open source MIT - compare vs CleanShot, Shottr, Xnapper.">
+  <meta property="og:image" content="https://achu.app/assets/gallery.png">
+  <meta property="og:image:alt" content="achu local screenshot gallery - browse and manage beautified captures on disk">
+  <meta property="og:image:width" content="1255">
+  <meta property="og:image:height" content="454">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="https://achu.app/">
+  <meta name="twitter:title" content="achu - Free Open-Source Screenshot Beautifier for Windows, macOS &amp; Linux">
+  <meta name="twitter:description"
+    content="Beautify screenshots free on every desktop OS. Local gallery, privacy redact, Code Studio, AI GitHub issues, burst packs. Open source MIT.">
+  <meta name="twitter:image" content="https://achu.app/assets/gallery.png">
+  <meta name="twitter:image:alt" content="achu local screenshot gallery - browse and manage beautified captures on disk">
+
+  <!-- Favicon and Manifest -->
+  <link rel="icon" href="favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/icon-32.png">
+  <link rel="icon" type="image/png" sizes="256x256" href="assets/icon-256.png">
+  <link rel="apple-touch-icon" href="assets/icon-256.png">
+  <link rel="manifest" href="site.webmanifest">
+  <meta name="theme-color" content="#b2ff59">
+
+  <!-- Preconnect for performance -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Structured Data / JSON-LD for SEO + AEO -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://achu.app/#website",
+        "url": "https://achu.app/",
+        "name": "achu",
+        "description": "Free open-source screenshot beautifier for Windows, macOS, and Linux with local gallery, privacy redaction, Code Studio, OCR, and AI GitHub issue drafting.",
+        "publisher": { "@id": "https://achu.app/#organization" },
+        "inLanguage": "en-US",
+        "potentialAction": {
+          "@type": "ReadAction",
+          "target": "https://achu.app/#compare"
+        }
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://achu.app/#webpage",
+        "url": "https://achu.app/",
+        "name": "achu - Free Open-Source Screenshot Beautifier",
+        "description": "Beautify screenshots free on Windows, macOS, and Linux. Local gallery, privacy redact, Code Studio, AI issues, burst packs. Compare vs CleanShot, Shottr, Xnapper.",
+        "isPartOf": { "@id": "https://achu.app/#website" },
+        "about": { "@id": "https://achu.app/#software" },
+        "primaryImageOfPage": {
+          "@type": "ImageObject",
+          "url": "https://achu.app/assets/gallery.png"
+        },
+        "inLanguage": "en-US",
+        "hasPart": [
+          { "@id": "https://achu.app/#install" },
+          { "@id": "https://achu.app/#features" },
+          { "@id": "https://achu.app/#compare" },
+          { "@id": "https://achu.app/#faq" }
+        ]
+      },
+      {
+        "@type": "Organization",
+        "@id": "https://achu.app/#organization",
+        "name": "QAInsights",
+        "url": "https://qainsights.com",
+        "logo": "https://achu.app/assets/logo.svg",
+        "sameAs": [
+          "https://github.com/QAInsights/achu",
+          "https://qainsights.com",
+          "https://buymeacoffee.com/qainsights"
+        ]
+      },
+      {
+        "@type": "SoftwareApplication",
+        "@id": "https://achu.app/#software",
+        "name": "achu",
+        "alternateName": ["அச்சு", "achu screenshot"],
+        "url": "https://achu.app/",
+        "downloadUrl": "https://github.com/QAInsights/achu/releases",
+        "applicationCategory": "MultimediaApplication",
+        "applicationSubCategory": "Screenshot beautifier",
+        "operatingSystem": "Windows, macOS, Linux",
+        "softwareVersion": "2026.5.30",
+        "description": "Free open-source desktop utility that beautifies screenshots, stores them in a local gallery, redacts secrets on-device, extracts text via OCR, beautifies code cards, exports multi-platform burst packs, and drafts GitHub bug reports with AI.",
+        "featureList": [
+          "Canvas beautification and browser chrome mockups",
+          "Local Screenshot Gallery with soft-delete trash",
+          "Smart Privacy Guard with on-device secret detection",
+          "AI-Powered GitHub Issue Agent",
+          "OCR canvas text grabber",
+          "Code Studio for beautiful code screenshots",
+          "Platform burst packs for OG and social sizes",
+          "Share captions and optional brand watermark",
+          "Before/After dual-panel export",
+          "Vector annotations with undo/redo"
+        ],
+        "screenshot": [
+          "https://achu.app/assets/gallery.png",
+          "https://achu.app/assets/presets.png",
+          "https://achu.app/assets/privacy.png",
+          "https://achu.app/assets/code-studio.png"
+        ],
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "USD",
+          "availability": "https://schema.org/InStock",
+          "url": "https://github.com/QAInsights/achu/releases"
+        },
+        "license": "https://opensource.org/licenses/MIT",
+        "isAccessibleForFree": true,
+        "publisher": { "@id": "https://achu.app/#organization" },
+        "author": { "@id": "https://achu.app/#organization" }
+      },
+      {
+        "@type": "WebPageElement",
+        "@id": "https://achu.app/#compare",
+        "name": "How achu stacks up",
+        "description": "Honest comparison of achu vs CleanShot X, Shottr, and Xnapper: price, platforms, open source, privacy, Code Studio, AI issues, burst packs, scrolling capture, and recording.",
+        "url": "https://achu.app/#compare",
+        "isPartOf": { "@id": "https://achu.app/#webpage" }
+      },
+      {
+        "@type": "ItemList",
+        "@id": "https://achu.app/#compare-stats",
+        "name": "achu at a glance",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "$0 forever free (MIT open source)" },
+          { "@type": "ListItem", "position": 2, "name": "3 desktop platforms: Windows, macOS, Linux" },
+          { "@type": "ListItem", "position": 3, "name": "100% local by default - no forced cloud upload" },
+          { "@type": "ListItem", "position": 4, "name": "Share loop with captions and optional brand badge" }
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://achu.app/#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What is achu?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "achu is a free, open-source desktop app for Windows, macOS, and Linux that beautifies screenshots, stores them in a local gallery, redacts sensitive data on-device, extracts text via OCR, beautifies code cards, and can draft GitHub bug reports using AI."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Does achu upload screenshots to the cloud?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. Beautification, gallery storage, privacy scanning, and OCR run locally on your machine. Cloud AI APIs are only contacted if you configure the Issue Agent with an external provider and approve the generated issue."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the achu screenshot gallery?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The gallery is a built-in local library. Save beautified captures from the footer Gallery button, browse thumbnails, reopen images in the editor, and manage files on disk. Default folder is ~/achu-screenshots; you can choose any folder in Settings."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What happens when I delete an image from the achu gallery?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Deletes are soft-deletes. Files move to a .achu-trash subfolder inside your gallery directory and are automatically removed after 30 days."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is achu free?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. achu is free and open source under the MIT License. Download from https://github.com/QAInsights/achu/releases."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How does achu compare to CleanShot, Shottr, or Xnapper?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "achu is free, open source, and runs on Windows, macOS, and Linux with beautify, local privacy redact, Code Studio, AI GitHub issue drafts, and platform burst packs. CleanShot and Shottr are stronger at scrolling capture and recording but are typically Mac-focused and paid. See https://achu.app/#compare for the full matrix."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Does achu put a watermark on exports?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "New installs default to a subtle Made with achu brand badge so shared images can help others discover the app. Turn it off anytime in Extras or Settings; the preference is saved."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Why does macOS say achu can't be opened because Apple cannot check it for malicious software?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "achu is not yet code-signed or notarized with an Apple Developer ID. Open achu once, click Done (not Move to Trash), then System Settings → Privacy & Security → Open Anyway. Authenticate, open achu again, and confirm Open. Full steps: https://achu.app/#install"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Windows SmartScreen says Windows protected your PC when I open achu",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Expected for unsigned portable EXEs. Click More info, then Run anyway. achu is MIT open source from GitHub. Signed builds are on the roadmap. Steps: https://achu.app/#install"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How do I install achu in 30 seconds?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Download the OS-specific binary from https://achu.app or GitHub Releases. Windows: run the portable EXE (More info → Run anyway if SmartScreen appears). macOS: install from the DMG, then Privacy & Security → Open Anyway. Linux: chmod +x the AppImage or install the .deb. See https://achu.app/#install"
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+</head>
+
+<body>
+
+  <!-- Ambient Glow Effects -->
+  <div class="ambient-glow-wrapper" aria-hidden="true">
+    <div class="ambient-glow glow-1"></div>
+    <div class="ambient-glow glow-2"></div>
+    <div class="ambient-glow glow-3"></div>
+  </div>
+
+  <!-- Header Navigation -->
+  <header class="navbar">
+    <div class="navbar-container">
+      <a href="#" class="brand" id="nav-brand" aria-label="achu Homepage">
+        <img class="brand-logo" src="assets/logo.svg" alt="achu Logo" width="32" height="32" />
+        <span class="brand-name">achu</span>
+      </a>
+
+      <!-- Accessibility Menu Toggle -->
+      <button class="menu-toggle" id="menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false"
+        aria-controls="nav-menu">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+          stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="4" y1="12" x2="20" y2="12" />
+          <line x1="4" y1="6" x2="20" y2="6" />
+          <line x1="4" y1="18" x2="20" y2="18" />
+        </svg>
+      </button>
+
+      <nav class="nav-menu" id="nav-menu" role="navigation">
+        <a href="#install" class="nav-link" id="nav-link-install">Install</a>
+        <a href="#features" class="nav-link" id="nav-link-features">Features</a>
+        <a href="#gallery" class="nav-link" id="nav-link-gallery">Showcase</a>
+        <a href="#compare" class="nav-link" id="nav-link-compare">Compare</a>
+        <a href="#faq" class="nav-link" id="nav-link-faq">FAQ</a>
+        <a href="https://github.com/QAInsights/achu" target="_blank" rel="noopener noreferrer" class="btn-nav-github"
+          id="nav-github-link">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path
+              d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4" />
+            <path d="M9 18c-4.51 2-5-2-7-2" />
+          </svg>
+          <span>GitHub</span>
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Content Wrapper -->
+  <main>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+      <div class="hero-text">
+        <div class="tamil-badge">
+          <span class="pulse-dot"></span>
+          <span class="tamil-word">அச்சு</span>
+          <span>means "print" or "mold" in Tamil</span>
+        </div>
+        <h1 class="hero-title" id="hero-title">achu</h1>
+        <p class="hero-subtitle" id="hero-subtitle">Free open-source screenshot beautifier for Windows, macOS, and Linux - local gallery, privacy redact, Code Studio, AI issues, and burst packs.</p>
+        <div class="hero-actions">
+          <a href="https://github.com/QAInsights/achu/releases" target="_blank" rel="noopener noreferrer"
+            class="btn-primary" id="hero-github-link" role="button">
+            Download App
+          </a>
+          <a href="#install" class="btn-secondary" id="hero-install-link" role="button">
+            Install in 30s
+          </a>
+          <a href="#gallery" class="btn-secondary" id="hero-explore-link" role="button">
+            Explore Features
+          </a>
+        </div>
+      </div>
+
+      <!-- App Interface Hero Mockup -->
+      <div class="hero-showcase" id="hero-showcase-container">
+        <div class="chrome-mockup glass-panel" id="hero-mockup" style="cursor: pointer;" role="button"
+          aria-label="Zoom in on achu app interface">
+          <div class="chrome-bar" aria-hidden="true">
+            <div class="chrome-dots">
+              <span class="chrome-dot dot-close"></span>
+              <span class="chrome-dot dot-minimize"></span>
+              <span class="chrome-dot dot-maximize"></span>
+            </div>
+            <span class="chrome-title">achu.app</span>
+          </div>
+          <div class="chrome-content" style="position: relative; width: 100%; aspect-ratio: 800 / 500; background: #0c0e0c; overflow: hidden;">
+            <canvas id="sand-table-canvas" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; display: block; opacity: 0; transition: opacity 0.5s ease;"></canvas>
+            <img id="sand-table-fallback" src="assets/achu.png" alt="achu app" width="800" height="500" fetchpriority="high" decoding="async" style="width: 100%; height: auto; display: block; border-bottom-left-radius: var(--radius-md); border-bottom-right-radius: var(--radius-md); transition: opacity 0.5s ease;" />
+          </div>
+        </div>
+        <!-- Floating Widget 1: Privacy -->
+        <div class="floating-widget widget-privacy glass-panel" aria-hidden="true">
+          <span class="widget-icon">🔒</span>
+          <div>
+            <div class="widget-title">100% Private</div>
+            <div class="widget-desc">Local Sandbox OCR</div>
+          </div>
+        </div>
+        <!-- Floating Widget 2: AI Bug Agent -->
+        <div class="floating-widget widget-ai glass-panel" aria-hidden="true">
+          <span class="widget-icon">🤖</span>
+          <div>
+            <div class="widget-title">AI Bug Agent</div>
+            <div class="widget-desc">GitHub Integrated</div>
+          </div>
+        </div>
+        <!-- Floating Widget 3: Local Gallery -->
+        <div class="floating-widget widget-gallery glass-panel" aria-hidden="true">
+          <span class="widget-icon">🗂️</span>
+          <div>
+            <div class="widget-title">Local Gallery</div>
+            <div class="widget-desc">Save &amp; Reopen Shots</div>
+          </div>
+        </div>
+        <!-- Floating Widget 4: Code Studio -->
+        <div class="floating-widget widget-code-studio glass-panel" aria-hidden="true">
+          <span class="widget-icon">🖥️</span>
+          <div>
+            <div class="widget-title">Code Studio</div>
+            <div class="widget-desc">Beautiful Code Shots</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Install Section: first-run trust + friction -->
+    <section id="install" aria-labelledby="install-title">
+      <span class="section-tag">Get started</span>
+      <h2 class="section-title" id="install-title">Install in 30 seconds</h2>
+      <p class="section-desc">
+        Free on Windows, macOS, and Linux. Download, open once, and you are in.
+        Current builds are <strong>unsigned</strong> (open source MIT). OS warnings are expected and safe to dismiss with the steps below.
+        Signed and notarized builds are on the roadmap and will simplify this further.
+      </p>
+
+      <div class="install-panel glass-panel">
+        <div class="install-tabs" role="tablist" aria-label="Choose your operating system">
+          <button type="button" class="install-tab" role="tab" id="install-tab-windows" data-os="windows"
+            aria-controls="install-panel-windows" aria-selected="false" tabindex="-1">
+            <span class="install-tab-icon" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M3 12V6.5l8-1.1V12H3zm9 0h9V4.3l-9 1.2V12zM3 13h8v6.6l-8-1.1V13zm9 0h9v6.7l-9-1.2V13z"/></svg>
+            </span>
+            Windows
+          </button>
+          <button type="button" class="install-tab" role="tab" id="install-tab-macos" data-os="macos"
+            aria-controls="install-panel-macos" aria-selected="false" tabindex="-1">
+            <span class="install-tab-icon" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+            </span>
+            macOS
+          </button>
+          <button type="button" class="install-tab" role="tab" id="install-tab-linux" data-os="linux"
+            aria-controls="install-panel-linux" aria-selected="false" tabindex="-1">
+            <span class="install-tab-icon" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C10.3 2 9 3.3 9 5c0 .9.4 1.7 1 2.2C8.4 8.4 7 10.8 7 13.5c0 2.2.9 4.2 2.5 5.5.8.6 1.6 1 2.5 1s1.7-.4 2.5-1C16 17.7 17 15.7 17 13.5c0-2.7-1.4-5.1-3-6.3.6-.5 1-1.3 1-2.2 0-1.7-1.3-3-3-3zm-1 3.5c.3 0 .5.2.5.5s-.2.5-.5.5-.5-.2-.5-.5.2-.5.5-.5zm2 0c.3 0 .5.2.5.5s-.2.5-.5.5-.5-.2-.5-.5.2-.5.5-.5z"/></svg>
+            </span>
+            Linux
+          </button>
+        </div>
+
+        <!-- Windows panel -->
+        <div class="install-tabpanel" role="tabpanel" id="install-panel-windows" data-os="windows"
+          aria-labelledby="install-tab-windows" hidden>
+          <div class="install-layout">
+            <div class="install-steps">
+              <ol class="install-step-list">
+                <li>
+                  <span class="install-step-num" aria-hidden="true">1</span>
+                  <div>
+                    <strong>Download the portable EXE</strong>
+                    <p>Use the green download button above, or grab <code>achu-x64-*.exe</code> from
+                      <a href="https://github.com/QAInsights/achu/releases" target="_blank" rel="noopener noreferrer" id="install-dl-windows">GitHub Releases</a>.
+                    </p>
+                  </div>
+                </li>
+                <li>
+                  <span class="install-step-num" aria-hidden="true">2</span>
+                  <div>
+                    <strong>Bypass SmartScreen</strong>
+                    <p>Windows may say the app is unrecognized because builds are not yet Authenticode-signed. Click <strong>More info</strong>, then <strong>Run anyway</strong>.</p>
+                  </div>
+                </li>
+                <li>
+                  <span class="install-step-num" aria-hidden="true">3</span>
+                  <div>
+                    <strong>Launch and paste a screenshot</strong>
+                    <p>achu opens as a portable app; no installer required. Press <kbd>Ctrl</kbd>+<kbd>V</kbd> to paste an image and start beautifying.</p>
+                  </div>
+                </li>
+              </ol>
+              <aside class="install-callout install-callout-warn" aria-label="Windows SmartScreen note">
+                <div class="install-callout-title">Windows protected your PC</div>
+                <p>This is normal for unsigned portable EXEs. The binary is open source and published from
+                  <a href="https://github.com/QAInsights/achu" target="_blank" rel="noopener noreferrer">QAInsights/achu</a>.
+                  Path: <strong>More info → Run anyway</strong>.</p>
+              </aside>
+            </div>
+            <div class="install-visual" aria-hidden="true">
+              <div class="os-dialog os-dialog-win">
+                <div class="os-dialog-titlebar">
+                  <span class="os-dialog-shield">🛡</span>
+                  <span>Windows protected your PC</span>
+                </div>
+                <div class="os-dialog-body">
+                  <p class="os-dialog-lead">Microsoft Defender SmartScreen prevented an unrecognized app from starting.</p>
+                  <p class="os-dialog-app">App: <strong>achu-x64.exe</strong></p>
+                  <p class="os-dialog-publisher">Publisher: Unknown</p>
+                  <button type="button" class="os-dialog-link" tabindex="-1">More info</button>
+                  <div class="os-dialog-actions">
+                    <span class="os-dialog-btn os-dialog-btn-ghost">Don't run</span>
+                    <span class="os-dialog-btn os-dialog-btn-accent">Run anyway</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- macOS panel -->
+        <div class="install-tabpanel" role="tabpanel" id="install-panel-macos" data-os="macos"
+          aria-labelledby="install-tab-macos" hidden>
+          <div class="install-layout">
+            <div class="install-steps">
+              <ol class="install-step-list">
+                <li>
+                  <span class="install-step-num" aria-hidden="true">1</span>
+                  <div>
+                    <strong>Download the DMG</strong>
+                    <p>Use the green download button above, or grab the universal <code>.dmg</code> from
+                      <a href="https://github.com/QAInsights/achu/releases" target="_blank" rel="noopener noreferrer" id="install-dl-macos">GitHub Releases</a>.
+                      Open it and drag <strong>achu</strong> into Applications.</p>
+                  </div>
+                </li>
+                <li>
+                  <span class="install-step-num" aria-hidden="true">2</span>
+                  <div>
+                    <strong>Dismiss the Gatekeeper alert</strong>
+                    <p>Gatekeeper may show <em>&quot;achu&quot; Not Opened</em> because the app is not yet notarized.
+                      Click <strong>Done</strong>, not Move to Trash.</p>
+                  </div>
+                </li>
+                <li>
+                  <span class="install-step-num" aria-hidden="true">3</span>
+                  <div>
+                    <strong>Allow achu in System Settings</strong>
+                    <p>Go to <strong>System Settings → Privacy &amp; Security</strong>, scroll to Security, and click
+                      <strong>Open Anyway</strong> next to the achu message. Authenticate, then open achu again and confirm <strong>Open</strong>.</p>
+                  </div>
+                </li>
+              </ol>
+              <aside class="install-callout install-callout-warn" aria-label="macOS Gatekeeper note">
+                <div class="install-callout-title">Why macOS blocks first launch</div>
+                <p>achu is not yet signed with an Apple Developer ID. This is the lasting fix on the roadmap.
+                  Until then, <strong>Open Anyway</strong> is the reliable path on Sequoia 15+ (right-click → Open alone is often not enough).</p>
+              </aside>
+            </div>
+            <div class="install-visual" aria-hidden="true">
+              <div class="os-dialog os-dialog-mac">
+                <div class="os-dialog-mac-chrome">
+                  <span class="chrome-dot dot-close"></span>
+                  <span class="chrome-dot dot-minimize"></span>
+                  <span class="chrome-dot dot-maximize"></span>
+                  <span class="os-dialog-mac-title">Privacy &amp; Security</span>
+                </div>
+                <div class="os-dialog-body os-dialog-mac-body">
+                  <div class="mac-sec-section">Security</div>
+                  <p class="mac-sec-msg">
+                    <span class="mac-sec-app">&quot;achu&quot;</span> was blocked to protect your Mac.
+                  </p>
+                  <div class="mac-sec-actions">
+                    <span class="os-dialog-btn os-dialog-btn-accent">Open Anyway</span>
+                  </div>
+                  <p class="mac-sec-hint">After authenticating, open achu again and click <strong>Open</strong>.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Linux panel -->
+        <div class="install-tabpanel" role="tabpanel" id="install-panel-linux" data-os="linux"
+          aria-labelledby="install-tab-linux" hidden>
+          <div class="install-layout">
+            <div class="install-steps">
+              <ol class="install-step-list">
+                <li>
+                  <span class="install-step-num" aria-hidden="true">1</span>
+                  <div>
+                    <strong>Download AppImage or .deb</strong>
+                    <p>Prefer <code>.AppImage</code> for a portable binary, or <code>.deb</code> on Debian/Ubuntu.
+                      Grab the matching arch from
+                      <a href="https://github.com/QAInsights/achu/releases" target="_blank" rel="noopener noreferrer" id="install-dl-linux">GitHub Releases</a>.</p>
+                  </div>
+                </li>
+                <li>
+                  <span class="install-step-num" aria-hidden="true">2</span>
+                  <div>
+                    <strong>Make it executable (AppImage)</strong>
+                    <p>In a terminal:</p>
+                    <pre class="install-code" tabindex="0"><code>chmod +x achu-*.AppImage
+./achu-*.AppImage</code></pre>
+                  </div>
+                </li>
+                <li>
+                  <span class="install-step-num" aria-hidden="true">3</span>
+                  <div>
+                    <strong>Or install the .deb</strong>
+                    <p><code>sudo dpkg -i achu_*_amd64.deb</code> (or <code>arm64</code>). Then launch <strong>achu</strong> from your app menu.</p>
+                  </div>
+                </li>
+              </ol>
+              <aside class="install-callout install-callout-warn" aria-label="Linux note">
+                <div class="install-callout-title">No SmartScreen-style wall</div>
+                <p>Linux typically runs unsigned AppImages without a Gatekeeper dialog. If your distro warns about an untrusted binary, that is expected for open-source downloads from GitHub.</p>
+              </aside>
+            </div>
+            <div class="install-visual" aria-hidden="true">
+              <div class="os-dialog os-dialog-linux">
+                <div class="os-dialog-titlebar os-dialog-linux-bar">
+                  <span class="os-dialog-linux-prompt">$</span>
+                  <span>terminal</span>
+                </div>
+                <div class="os-dialog-body os-dialog-linux-body">
+                  <pre class="linux-term"><code><span class="term-prompt">$</span> chmod +x achu-x64.AppImage
+<span class="term-prompt">$</span> ./achu-x64.AppImage
+<span class="term-ok">✓ achu ready; paste a screenshot</span></code></pre>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <p class="install-footnote">
+          Signed Windows (Authenticode) and macOS (Developer ID + notarization) builds will replace these trust steps when ready.
+          Until then, the steps above are the supported first-run path.
+          <a href="https://github.com/QAInsights/achu#macos-gatekeeper-unsigned-builds" target="_blank" rel="noopener noreferrer">Full README notes</a>
+        </p>
+      </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" aria-labelledby="features-title">
+      <span class="section-tag">Powerful Engine</span>
+      <h2 class="section-title" id="features-title">Designed to Be Beautiful, Built to Be Secure</h2>
+      <p class="section-desc">achu runs fully locally, ensuring your data never leaves your computer unless you
+        explicitly ask it to.</p>
+
+      <!-- Loaded dynamically via JavaScript module -->
+      <div class="features-grid" id="features-container"></div>
+    </section>
+
+    <!-- Showcase Gallery Section -->
+    <section id="gallery" aria-labelledby="gallery-title">
+      <span class="section-tag">Interactive Showcase</span>
+      <h2 class="section-title" id="gallery-title">Gorgeous Screenshots Rendered Evenly</h2>
+      <p class="section-desc">Take a look at how achu wraps, scans, redacts, and generates reports from raw images.
+        Click any image to view details.</p>
+
+      <!-- Loaded dynamically via JavaScript module -->
+      <div class="gallery-grid" id="gallery-container"></div>
+    </section>
+
+    <!-- Comparison Section (homepage - converts visitors without a separate page) -->
+    <section id="compare" aria-labelledby="compare-title">
+      <span class="section-tag">Honest comparison</span>
+      <h2 class="section-title" id="compare-title">How achu stacks up</h2>
+      <p class="section-desc" id="compare-subhead">
+        Built for people who want beautiful, private, free screenshots - without a Mac-only tax or a subscription.
+      </p>
+
+      <div class="cmp-stats" id="comparison-stats" aria-label="achu at a glance"></div>
+
+      <div class="cmp-table-wrap glass-panel" id="comparison-table-host">
+        <!-- Table rendered by initComparison() from config.comparison -->
+      </div>
+
+      <p class="cmp-disclaimer" id="comparison-disclaimer"></p>
+
+      <div class="cmp-cta">
+        <a href="https://github.com/QAInsights/achu/releases" target="_blank" rel="noopener noreferrer"
+          class="btn-primary" id="compare-download-link" role="button">
+          Download free
+        </a>
+        <a href="#features" class="btn-secondary" role="button">See features</a>
+      </div>
+    </section>
+
+    <!-- FAQ Section (SEO / AEO) -->
+    <section id="faq" aria-labelledby="faq-title">
+      <span class="section-tag">Questions</span>
+      <h2 class="section-title" id="faq-title">Frequently Asked Questions</h2>
+      <p class="section-desc">Quick answers about achu, install (SmartScreen / Gatekeeper), privacy, and the local screenshot gallery.</p>
+
+      <div class="faq-list">
+        <details class="faq-item">
+          <summary class="faq-question">
+            <span>What is achu?</span>
+            <svg class="faq-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+          </summary>
+          <p class="faq-answer">achu is a free, open-source desktop app for Windows, macOS, and Linux that beautifies screenshots, stores them in a local gallery, redacts sensitive data on-device, extracts text via OCR, and can draft GitHub bug reports using AI.</p>
+        </details>
+        <details class="faq-item">
+          <summary class="faq-question">
+            <span>Does achu upload screenshots to the cloud?</span>
+            <svg class="faq-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+          </summary>
+          <p class="faq-answer">No. Beautification, gallery storage, privacy scanning, and OCR run locally on your machine. Cloud AI APIs are only contacted if you configure the Issue Agent with an external provider and approve the generated issue.</p>
+        </details>
+        <details class="faq-item">
+          <summary class="faq-question">
+            <span>What is the screenshot gallery?</span>
+            <svg class="faq-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+          </summary>
+          <p class="faq-answer">A built-in local library. Save beautified captures from the footer Gallery button, browse thumbnails, reopen images in the editor, and manage files on disk. Default folder is <code>~/achu-screenshots</code>; choose any folder in Settings.</p>
+        </details>
+        <details class="faq-item">
+          <summary class="faq-question">
+            <span>What happens when I delete a gallery image?</span>
+            <svg class="faq-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+          </summary>
+          <p class="faq-answer">Deletes are soft-deletes. Files move to a <code>.achu-trash</code> subfolder inside your gallery directory and are automatically removed after 30 days.</p>
+        </details>
+        <details class="faq-item">
+          <summary class="faq-question">
+            <span>Is achu free?</span>
+            <svg class="faq-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+          </summary>
+          <p class="faq-answer">Yes. achu is free and open source under the MIT License. <a href="https://github.com/QAInsights/achu/releases" target="_blank" rel="noopener noreferrer">Download from GitHub Releases</a>.</p>
+        </details>
+        <details class="faq-item">
+          <summary class="faq-question">
+            <span>How does achu compare to CleanShot, Shottr, or Xnapper?</span>
+            <svg class="faq-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+          </summary>
+          <p class="faq-answer">achu is free, open source, and runs on Windows, macOS, and Linux. It focuses on beautify + privacy redact + Code Studio + AI GitHub issue drafts + platform burst packs. CleanShot and Shottr are stronger at capture extras like scrolling screenshots and recording (often Mac-only and paid). See the full matrix on the <a href="#compare">Compare</a> section.</p>
+        </details>
+        <details class="faq-item">
+          <summary class="faq-question">
+            <span>Does achu put a watermark on exports?</span>
+            <svg class="faq-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+          </summary>
+          <p class="faq-answer">New installs default to a subtle &quot;Made with achu · achu.app&quot; badge so shared images can help others discover the app. Turn it off anytime in Extras or Settings; the preference is saved.</p>
+        </details>
+        <details class="faq-item">
+          <summary class="faq-question">
+            <span>macOS says "Can't be opened because Apple cannot check it for malicious software"</span>
+            <svg class="faq-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+          </summary>
+          <p class="faq-answer">achu is not yet code-signed or notarized with an Apple Developer ID. <strong>Recommended:</strong> open achu once, click <strong>Done</strong> (not Move to Trash), then go to <strong>System Settings → Privacy &amp; Security</strong>, click <strong>Open Anyway</strong>, authenticate, and open achu again. Optional Terminal: <code>xattr -cr /Applications/achu.app</code>. Full walkthrough with visuals: <a href="#install">Install in 30 seconds</a>.</p>
+        </details>
+        <details class="faq-item">
+          <summary class="faq-question">
+            <span>Windows SmartScreen says &quot;Windows protected your PC&quot;</span>
+            <svg class="faq-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+          </summary>
+          <p class="faq-answer">Expected for unsigned portable EXEs. Click <strong>More info</strong>, then <strong>Run anyway</strong>. achu is MIT open source from GitHub; Authenticode signing is on the roadmap. See <a href="#install">Install in 30 seconds</a>.</p>
+        </details>
+        <details class="faq-item">
+          <summary class="faq-question">
+            <span>How do I install achu quickly?</span>
+            <svg class="faq-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+          </summary>
+          <p class="faq-answer">Use the OS tabs on the homepage <a href="#install">Install</a> section: download for your platform, clear the expected OS warning (SmartScreen / Gatekeeper), then paste a screenshot with <kbd>Ctrl</kbd>/<kbd>⌘</kbd>+<kbd>V</kbd>.</p>
+        </details>
+      </div>
+    </section>
+
+    <!-- Partners / Links Section -->
+    <section id="ecosystem" aria-labelledby="ecosystem-title">
+      <div class="partners-container glass-panel">
+        <h2 class="partners-title" id="ecosystem-title">Explore the Product Ecosystem</h2>
+
+        <!-- Loaded dynamically via JavaScript module -->
+        <div class="partners-links" id="partners-grid"></div>
+      </div>
+    </section>
+
+
+
+  </main>
+
+  <!-- Interactive Lightbox Modal -->
+  <div class="modal" id="lightbox-modal" role="dialog" aria-modal="true" aria-labelledby="lightbox-caption">
+    <button class="modal-close" id="lightbox-close" aria-label="Close image preview">&times;</button>
+    <div class="modal-content">
+      <img class="modal-img" id="lightbox-img" src="" alt="" decoding="async" />
+      <p class="modal-caption" id="lightbox-caption"></p>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-top">
+      <div>
+        <a href="#" class="brand" aria-label="achu Homepage">
+          <img class="brand-logo" src="assets/logo.svg" alt="achu Logo" width="24" height="24" />
+          <span class="brand-name">achu</span>
+        </a>
+        <p class="footer-desc">A lightweight, gorgeous desktop utility that turns raw screenshots into polished visual
+          assets with a built-in local gallery, privacy redaction, and AI bug reporting.</p>
+      </div>
+      <div class="footer-links">
+        <a href="https://github.com/QAInsights/achu" target="_blank" rel="noopener noreferrer" class="footer-link"
+          id="footer-github-link">GitHub</a>
+        <a href="https://buymeacoffee.com/qainsights" target="_blank" rel="noopener noreferrer" class="footer-link"
+          id="footer-coffee-link">Buy Me a Coffee</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span id="footer-copyright">&copy; 2026 achu. Released under the MIT License.</span>
+      <span class="footer-meaning" id="footer-meaning">achu (அச்சு) means 'print' or 'mold' in Tamil. 🖨️</span>
+    </div>
+  </footer>
+
+  <!-- Main JavaScript App Loader -->
+  <script src="js/config.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/sand-table.js"></script>
+
+</body>
+
+</html>

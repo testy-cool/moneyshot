@@ -43,6 +43,9 @@ Thumbs.db
 !docs/llms-full.txt
 !docs/robots.txt
 
+*.md
+!README.md
+!PRIVACY.md
 .aider*
 .qwen/settings.json
 .qwen/settings.json.orig
