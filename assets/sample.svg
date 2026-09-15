@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="660" viewBox="0 0 1000 660">
+  <rect width="1000" height="660" fill="#f8fafc"/>
+  <rect width="1000" height="72" fill="#ffffff"/>
+  <g font-family="sans-serif" fill="#0f172a">
+    <text x="40" y="45" font-size="24" font-weight="700">Studio / Deployments</text>
+    <text x="40" y="140" font-size="34" font-weight="700">Ready to ship</text>
+    <text x="40" y="180" font-size="18" fill="#64748b">Review your changes before publishing.</text>
+    <rect x="40" y="226" width="920" height="258" rx="16" fill="white" stroke="#e2e8f0"/>
+    <text x="70" y="273" font-size="20" font-weight="700">Website refresh</text>
+    <text x="70" y="313" font-size="18" fill="#64748b">Preview build · All checks passed</text>
+    <text x="70" y="372" font-size="17">Owner</text>
+    <text x="70" y="407" font-size="20">alex@example.com</text>
+    <rect x="700" y="354" width="220" height="66" rx="12" fill="#2563eb"/>
+    <text x="810" y="395" text-anchor="middle" font-size="20" fill="white">Publish changes</text>
+    <text x="40" y="553" font-size="18" fill="#64748b">A fictional sample for trying Moneyshot.</text>
+  </g>
+</svg>

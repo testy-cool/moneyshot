@@ -1,10 +1,7 @@
 use base64::{engine::general_purpose::STANDARD, Engine};
 use serde::{Deserialize, Serialize};
 use serde_json::{json, Value};
-use std::{
-    fs,
-    path::{Path, PathBuf},
-};
+use std::{fs, path::Path};
 
 #[derive(Serialize)]
 #[serde(rename_all = "camelCase")]
@@ -37,40 +34,6 @@ fn mime_for_path(path: &Path) -> &'static str {
     }
 }
 
-fn is_supported_image(path: &Path) -> bool {
-    matches!(
-        path.extension()
-            .and_then(|value| value.to_str())
-            .unwrap_or_default()
-            .to_ascii_lowercase()
-            .as_str(),
-        "png" | "jpg" | "jpeg" | "webp"
-    )
-}
-
-fn read_image(path: &Path) -> Result<OpenedImage, String> {
-    if !is_supported_image(path) {
-        return Err("Moneyshot can open PNG, JPEG, or WebP images.".to_string());
-    }
-
-    let bytes = fs::read(path).map_err(|error| format!("Could not open the image: {error}"))?;
-    let data_url = format!(
-        "data:{};base64,{}",
-        mime_for_path(path),
-        STANDARD.encode(bytes)
-    );
-    let file_name = path
-        .file_name()
-        .and_then(|value| value.to_str())
-        .unwrap_or("screenshot.png")
-        .to_string();
-
-    Ok(OpenedImage {
-        data_url,
-        file_name,
-    })
-}
-
 fn decode_data_url(data_url: &str) -> Result<(&str, Vec<u8>), String> {
     let (header, encoded) = data_url
         .split_once(',')
@@ -93,17 +56,22 @@ fn open_image() -> Result<Option<OpenedImage>, String> {
         return Ok(None);
     };
 
-    read_image(&path).map(Some)
-}
+    let bytes = fs::read(&path).map_err(|error| format!("Could not open the image: {error}"))?;
+    let data_url = format!(
+        "data:{};base64,{}",
+        mime_for_path(&path),
+        STANDARD.encode(bytes)
+    );
+    let file_name = path
+        .file_name()
+        .and_then(|value| value.to_str())
+        .unwrap_or("screenshot.png")
+        .to_string();
 
-#[tauri::command]
-fn open_startup_image() -> Result<Option<OpenedImage>, String> {
-    let path = std::env::args_os()
-        .skip(1)
-        .map(PathBuf::from)
-        .find(|path| path.is_file() && is_supported_image(path));
-
-    path.map(|path| read_image(&path)).transpose()
+    Ok(Some(OpenedImage {
+        data_url,
+        file_name,
+    }))
 }
 
 #[tauri::command]
@@ -238,12 +206,7 @@ async fn ask_gemini(request: AIRequest) -> Result<Value, String> {
 #[cfg_attr(mobile, tauri::mobile_entry_point)]
 pub fn run() {
     tauri::Builder::default()
-        .invoke_handler(tauri::generate_handler![
-            open_image,
-            open_startup_image,
-            save_image,
-            ask_gemini
-        ])
+        .invoke_handler(tauri::generate_handler![open_image, save_image, ask_gemini])
         .run(tauri::generate_context!())
         .expect("error while running Moneyshot");
 }
@@ -261,13 +224,5 @@ mod tests {
     #[test]
     fn rejects_non_image_data() {
         assert!(decode_data_url("data:text/plain;base64,aGVsbG8=").is_err());
-    }
-
-    #[test]
-    fn accepts_supported_image_extensions_case_insensitively() {
-        assert!(is_supported_image(Path::new("capture.PNG")));
-        assert!(is_supported_image(Path::new("capture.jpeg")));
-        assert!(is_supported_image(Path::new("capture.webp")));
-        assert!(!is_supported_image(Path::new("notes.txt")));
     }
 }
