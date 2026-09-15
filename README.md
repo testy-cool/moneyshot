@@ -4,6 +4,8 @@ Moneyshot is a small Tauri app for cropping and annotating screenshots. Open, pa
 
 AI locates regions from plain instructions such as “the error dialog.” It shows its bounding boxes without changing the image; you can switch between earlier results, use one as a crop preview, or keep one as an editable box. Requests run through a configurable OpenAI-compatible endpoint.
 
+![Moneyshot screenshot editor with annotations, backgrounds, and export controls](docs/assets/achu.png)
+
 ## Run it
 
 You need Node.js, npm, Rust, and the [Tauri system dependencies](https://v2.tauri.app/start/prerequisites/) for your platform.
